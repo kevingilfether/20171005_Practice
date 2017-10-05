@@ -27,17 +27,43 @@ namespace _20171005_Practice
 
             //Practicing looping w. Arrays
             string[] favoriteHolidays = { "Halloween", "Thanksgiving", "New Year's", "Valentine's Day" };
-            foreach (string holiday in favoriteHolidays)
-            {
-                Console.WriteLine(holiday);
-            }
+            //foreach (string holiday in favoriteHolidays)
+            //{
+            //    Console.WriteLine(holiday);
+            //}
 
 
-            // and now a for loop
-            for (int i = 0; i < favoriteHolidays.Length; i++)
+            //// and now a for loop
+            //for (int i = 0; i < favoriteHolidays.Length; i++)
+            //{
+            //    Console.WriteLine(favoriteHolidays[i]);
+            //}
+
+            //string loops
+            int[] multiplesOfThree = { 3, 6, 9, 12, 15, 18 };
+            int sum = 0;
+
+            //foreach (int multiple in multiplesOfThree)
+            //{
+            //    sum += multiple;
+            //}
+
+            for (int i = 0; i < multiplesOfThree.Length; i++)
             {
-                Console.WriteLine(favoriteHolidays[i]);
+                sum += multiplesOfThree[i];
             }
+
+            Console.WriteLine(sum);
+
+            //do while
+            string playAgain;
+            do
+            {
+                Console.WriteLine("Great Game!");
+                Console.WriteLine("Do you want to play again? (Y/N)");
+                playAgain = Console.ReadLine().ToUpper();               
+            }
+            while(playAgain == "Y");
 
 
         }
