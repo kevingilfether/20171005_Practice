@@ -65,9 +65,13 @@ namespace _20171005_Practice
             //}
             //while(playAgain == "Y");
 
-            int[] nums = { 4, 8, 12, 16, 20 };
+            int[] nums = { 4, 8, 12, 4000, 16, 20 };
 
             Console.WriteLine(ArraySum(nums));
+
+            Console.WriteLine(SumDigits(123));
+
+            Console.WriteLine(FindMaximum(nums));
 
 
         }
@@ -98,7 +102,28 @@ namespace _20171005_Practice
             int doubledNum = num * 2;
             return doubledNum;
         }
-        
+        public static int SumDigits(int numToBeSummed)
+        {
+            int sum = 0;
+            while (numToBeSummed != 0)
+            {
+                sum += numToBeSummed % 10;
+                numToBeSummed /= 10;
+            }
+            return sum;
+        }
+        public static int FindMaximum(int [] arrayScanned)
+        {
+            int max = 0;
+            foreach (int num in arrayScanned)
+            {
+                if (num>max)
+                {
+                    max = num;
+                }
+            }
+            return max;
+        }
 
     }
 }
