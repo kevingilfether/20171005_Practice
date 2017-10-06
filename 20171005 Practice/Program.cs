@@ -93,7 +93,12 @@ namespace _20171005_Practice
             }
             return sum;
         }
-
+        public static int DoubleIt(int num)
+        {
+            int doubledNum = num * 2;
+            return doubledNum;
+        }
+        
 
     }
 }
