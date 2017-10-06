@@ -67,5 +67,16 @@ namespace _20171005_Practice
 
 
         }
+        public static void SayHello(string name)
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+        public static void SayGoodbye()
+        {
+            Console.WriteLine("Goodbye!");
+        }
+
+
+
     }
 }
