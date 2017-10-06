@@ -48,22 +48,26 @@ namespace _20171005_Practice
             //    sum += multiple;
             //}
 
-            for (int i = 0; i < multiplesOfThree.Length; i++)
-            {
-                sum += multiplesOfThree[i];
-            }
+            //for (int i = 0; i < multiplesOfThree.Length; i++)
+            //{
+            //    sum += multiplesOfThree[i];
+            //}
 
-            Console.WriteLine(sum);
+            //Console.WriteLine(sum);
 
-            //do while
-            string playAgain;
-            do
-            {
-                Console.WriteLine("Great Game!");
-                Console.WriteLine("Do you want to play again? (Y/N)");
-                playAgain = Console.ReadLine().ToUpper();               
-            }
-            while(playAgain == "Y");
+            ////do while
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Great Game!");
+            //    Console.WriteLine("Do you want to play again? (Y/N)");
+            //    playAgain = Console.ReadLine().ToUpper();               
+            //}
+            //while(playAgain == "Y");
+
+            int[] nums = { 4, 8, 12, 16, 20 };
+
+            Console.WriteLine(ArraySum(nums));
 
 
         }
@@ -75,7 +79,20 @@ namespace _20171005_Practice
         {
             Console.WriteLine("Goodbye!");
         }
-
+        public static int SumIt(int num1, int num2)
+        {
+            int sum = num1 + num2;
+            return sum;
+        }
+        public static int ArraySum(int[] numbersToBeSummed)
+        {
+            int sum = 0;
+            foreach (int num in numbersToBeSummed)
+            {
+                sum += num;
+            }
+            return sum;
+        }
 
 
     }
